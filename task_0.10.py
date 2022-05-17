@@ -1,4 +1,6 @@
 def grab_common_chars(string1, string2):
+    string1 = str(string1).lower()
+    string2 = str(string).lower()
     common_characters = list()
 
     for string in string2:
