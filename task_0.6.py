@@ -11,12 +11,11 @@ def maximum(x, y, z):
             max_value = number
 
     return max_value
-    #   print(max_value)
 
 
 try:
-    theMaximum = maximum(1, 22, 3.2)
-    #   print("The Bigger number is:", theMximim)
+    the_maximum = maximum(1, 22, 3.2)
+    print("The Bigger number is:", the_maximum)
 
 except (ValueError, NameError):
     print("You really should check your arguments (-,-\")")
