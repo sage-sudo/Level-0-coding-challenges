@@ -1,18 +1,18 @@
 def grab_vowels(string):
     string_literal = string.lower()
-    VOWELS = "aeiou"
+    vowels = "aeiou"
 
-    vowels = list()
+    _vowels = list()
     for character in string_literal:
-        if character in VOWELS:
-            vowels.append(character)
+        if character in vowels:
+            _vowels.append(character)
 
-    handleDelimeter = ""
-    for vowel in vowels:
-        if vowel not in handleDelimeter:
-            handleDelimeter += vowel
+    handle_delimeter = ""
+    for vowel in _vowels:
+        if vowel not in handle_delimeter:
+            handle_delimeter += vowel
 
-    print("Vowels:", ", ".join(handleDelimeter))
+    print("Vowels:", ", ".join(handle_delimeter))
 
 
 grab_vowels("Umuzi")
