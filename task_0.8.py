@@ -2,7 +2,7 @@ def time_convertion(num):
     number = int(num)
 
     handles_pluras_for_hours = "hour"
-    handles_pluras_for_minuets = "minuet"
+    handles_pluras_for_minutes = "minute"
 
     count_hours = 0
 
@@ -10,16 +10,16 @@ def time_convertion(num):
         number -= 60
         count_hours += 1
 
-    take_minuets = number
+    take_minutes = number
 
     if count_hours > 1 or count_hours == 0:
         handles_pluras_for_hours = "hours" 
 
-    if take_minuets > 1 or take_minuets == 0:
-        handles_pluras_for_minuets = "minuets"
+    if take_minutes > 1 or take_minutes == 0:
+        handles_pluras_for_minutes = "minutes"
 
-    time = f"{count_hours} {handles_pluras_for_hours}, {take_minuets} {handles_pluras_for_minuets}."
-    #   print(time)
+    time = f"{count_hours} {handles_pluras_for_hours}, {take_minutes} {handles_pluras_for_minutes}."
+  
     return time
 
 
