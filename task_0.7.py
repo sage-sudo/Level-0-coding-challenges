@@ -1,5 +1,3 @@
-#   Temperature Conversion Formula -> (0°C × 9 / 5) + 32 = 32°F
-
 def celsius_to_fahrenheit(temp):
     temperature_in_celsius = float(temp)
     convert_to_fahrenheit = (temperature_in_celsius * (9/5)) + 32
