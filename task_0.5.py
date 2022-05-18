@@ -1,21 +1,14 @@
-import math
+def triangle_area_by_sides(side1, side2, side3):
+    side1 = float(side1)
+    side2 = float(side2)
+    side3 = float(side3)
 
-# Formula for parameter : s = 1/2 (a+b+c)
-# Formula for Area : A = square_root(s (s - a) (s - b) (s - c))
+    parameter = 1 / 2 * (side1 + side2 + side3)
 
-
-def triangle_area_by_sides(opposite, base, hypotenuse):
-    opposite = float(opposite)
-    base = float(base)
-    hypotenuse = float(hypotenuse)
-
-    parameter = 1/2 * (opposite + base + hypotenuse)
-
-    are_of_triangle = math.sqrt(parameter * ((parameter - opposite) * (parameter - base) * (parameter - hypotenuse)))
+    are_of_triangle = (parameter * ((parameter - side1) * (parameter - side2) * (parameter - side3))) ** (1/2)
     
     return are_of_triangle
 
-    
 
 try:
     checkArea = triangle_area_by_sides(3, 4, 5)
